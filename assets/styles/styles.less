@@ -1,5 +1,6 @@
 @red: #d70e16;
 @white: #ffffff;
+@gray: #eeeeee;
 
 
 .home-bg {
@@ -12,5 +13,27 @@
 }
 
 .home-logo {
+  position: fixed;
+  width: 200px;
+  right: 100%;
+  top: 50px;
+  transition: right 5s ease;
 
+  &.enter {
+    right: 50px;
+  }
+}
+
+.home-text {
+  position: fixed;
+  width: 100%;
+  bottom: 70px;
+  text-align: center;
+  color: @gray;
+  font-size: 21px;
+  line-height: 1.5;
+
+  a {
+    color: @white;
+  }
 }
