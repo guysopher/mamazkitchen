@@ -1,10 +1,115 @@
-<div class="home-bg"></div>
-<img class="home-logo" src="images/mamaz-logo-white-500x707.png"/>
-<div class="home-text">
-  <!--<div class="title">Mamaz Kitchen</div>-->
-  <!--<div class="subtitle">Home Cooked Marketplace</div>-->
-  <div class="status">The site is currently under construction</div>
-  <div class="contact">In the meantime you can contact us at:
-    <a href="mailto:info@mamaz.kitchen" target="_blank">info@mamaz.kitchen</a>
+<div class="signup">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-6 signup-form form-cook">
+
+        <div class="spacer"></div>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+
+        <div class="spacer"></div>
+
+        <i class="fa fa-check signup-success" style="display: none;"></i>
+
+        <form action="/leads/signup" method="post">
+          <input type="hidden" class="form-control" name="type" value="COOK">
+          <div class="form-group">
+            <label for="cook-name">Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="cook-email">Email address</label>
+            <input type="email" class="form-control" name="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="cook-phone">Phone</label>
+            <input type="phone" class="form-control" name="phone" placeholder="Phone">
+          </div>
+
+          <div class="spacer"></div>
+
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+      </div>
+
+      <div class="col-xs-6 signup-form form-eater">
+
+        <div class="spacer"></div>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+
+        <div class="spacer"></div>
+
+        <i class="fa fa-check signup-success" style="display: none;"></i>
+
+        <form action="/leads/signup" method="post">
+          <input type="hidden" class="form-control" name="type" value="EATER">
+          <div class="form-group">
+            <label for="eater-name">Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="eater-email">Email address</label>
+            <input type="email" class="form-control" name="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="eater-phone">Phone</label>
+            <input type="phone" class="form-control" name="phone" placeholder="Phone">
+          </div>
+
+          <div class="spacer"></div>
+
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="home">
+  <div class="home-cover" style="display: none;"></div>
+  <img class="home-logo" src="images/mamaz-logo-white-500x707.png"/>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="spacer"></div>
+      <div class="col-xs-12">
+        <div class="home-text">
+          <!--<div class="title">Mamaz Kitchen</div>-->
+          <!--<div class="subtitle">Home Cooked Marketplace</div>-->
+          <div class="status">The site is currently under construction</div>
+          <div class="contact">In the meantime you can contact us at:
+            <a href="mailto:info@mamaz.kitchen" target="_blank">info@mamaz.kitchen</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="section-text cook-text">
+          <p>Do you want to cook?</p>
+
+          <div class="btn btn-default btn-large btn-i-cook">I COOK</div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="section-text eater-text">
+          <p>Do you want to eat?</p>
+
+          <div class="btn btn-default btn-large btn-i-eat">I EAT</div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
