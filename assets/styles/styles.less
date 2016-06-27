@@ -3,6 +3,16 @@
 @gray: #eeeeee;
 @green: #5cb85c;
 
+@font-face {
+  font-family: 'mamaz-title';
+
+  src: url('../fonts/Helvetica%20Rounded%20LT%20Bold%20Condensed.ttf');
+}
+
+body {
+  font-family: "mamaz-title", "Courier New", sans-serif;
+}
+
 .spacer {
   display: block;
   height: 20px;
@@ -17,12 +27,14 @@
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('http://res.cloudinary.com/mamaz-kitchen/image/upload/v1466548611/2_tygd3e.jpg');
   background-size: cover;
   z-index: 0;
-
-
   color: @white !important;
 
   .signup-form {
     padding: 40px;
+
+    p {
+      font-size: 18px;
+    }
   }
 }
 
@@ -61,6 +73,7 @@
   width: 200px;
   right: 100%;
   bottom: 50px;
+  z-index: 10000;
 
   &.enter {
     transition: right 2s ease;
@@ -71,6 +84,18 @@
   &.finish {
     transition: right 0s ease;
     right: 50px;
+  }
+}
+
+.home-contact {
+  position: absolute;
+  bottom: 10px;
+  left:10px;
+  font-size: 16px;
+  color: @white;
+
+  a {
+    color: @white;
   }
 }
 
@@ -85,4 +110,9 @@
   a {
     color: @white;
   }
+}
+
+.section-text {
+  font-size: 16px;
+  text-align: justify;
 }
